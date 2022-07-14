@@ -218,7 +218,7 @@ function updateVisibleContent(event, eventsContent) {
         });
     }
 
-    let selectedContentHeight = selectedContent.clientHeight;
+    let selectedContentHeight = window.getComputedStyle(selectedContent).height;
     eventsContent.style.height = selectedContentHeight + 'px';
 }
 
