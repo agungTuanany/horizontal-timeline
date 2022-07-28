@@ -2,7 +2,7 @@
 /// =====================================
 /// at the end - run the code
 function ready(callback) {
-    if (document.readystate != "loading") callback();
+    if (document.readyState != "loading") callback();
     else document.addEventListener("DOMContentLoaded", callback());
 };
 
